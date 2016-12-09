@@ -1,10 +1,12 @@
 <?php
 
+namespace HellCatIT\Twig;
+
 use Symfony\Bridge\Twig\Form\TwigRenderer;
 use Symfony\Bridge\Twig\Form\TwigRendererEngine;
 use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 
-class TwigRenderer_RuntimeLoader implements \Twig_RuntimeLoaderInterface
+final class TwigRenderer_RuntimeLoader implements \Twig_RuntimeLoaderInterface
 {
 
     private $defaultThemes = [];
